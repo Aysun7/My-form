@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My-form</title>
+    <style>
+        .container{
+            justify-content: center;
+            gap: 10px;
+            }
+
+
+label{
+    font-size: 20px;
+    font-weight: 700px;
+    color: rgb(15, 186, 225);
+}
+input{
+    width: 200px; 
+    height: 20px;
+    border-radius: 10px;
+}
+#surname{
+    background-color: solid red;
+}
+.btns{    display: flex;
+    gap: 10px;
+    justify-content: end;
+    </style>
+</head>
+<body>
+   <form method="get"> 
+    <div class="container">
+<label for="name">Name</label> 
+<br>
+<input type="text" name=" name" placeholder="name"> 
+<br>       
+<label for="surname">Surname</label> <br>
+<input type="text" name="surname" placeholder="surname">
+<br>
+<label for="age">Age</label>
+ <br>
+<input type="text" name="age" placeholder="age">
+<br>
+<label for="password">Password</label>
+<br>
+<input type="text" name="password" placeholder="password">
+<br>
+<label for="email">Email</label>
+<br>
+<input type="text" name="email" placeholder="email">
+<br>
+<label for="telephone">Telephone</label>
+<br>
+<input type="text" name="telephone" placeholder="telephone">
+
+<br>
+<br>
+<div class="btns">
+<button  type="submit">
+    Submit
+</button>
+<button type="reset">
+    Reset
+</button>
+</div>
+<div>
+    Choose your gender
+</div>
+<input type="radio" > <span>male</span>
+<input type="radio" > <span>female</span>
+<br>
+<div> 
+   Add Cv 
+</div>
+<input type="file"name="file">
+<br>
+<div> 
+    If you have any additional information you would like to add, please write it down.
+</div>
+<textarea name="message" id="" placeholder="message"></textarea>
+<br>
+<div>
+    Choose your job
+</div>
+<select name="jobs" id="" multiple>
+    <option value="Software Engineer">Software Engineer</option>
+    <option value="Front-end Developer">Front-end Developer</option>
+    <option value="Backend Developer">Backend Developer</option>
+    <option value="Data Scientist" disabled> Data Scientist </option>
+
+   </form> 
+</body>
+</html>
