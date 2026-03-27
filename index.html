@@ -10,34 +10,43 @@
             gap: 10px;
             }
 
-
 label{
     font-size: 20px;
-    font-weight: 700px;
-    color: rgb(15, 186, 225);
+    font-weight: 200px;
+    color: rgb(1, 10, 12);
 }
 input{
-    width: 200px; 
-    height: 20px;
-    border-radius: 10px;
+    width: 450px; 
+    height: 30px;
+    border-radius: 20px;
+    background-color: rgb(232, 239, 239);
+    font-size: 15px;
 }
 #surname{
-    background-color: solid red;
+    background-color: solid rgba(26, 229, 121, 0.721);
 }
 .btns{    display: flex;
     gap: 10px;
-    justify-content: end;
+    justify-content: end ;
+    border-radius: 8px;
+    border: none;
+    color: rgb(28, 22, 22);
+    background-color: rgb(237, 247, 247);
+    padding: 10px 20px;
+    font-size: 20px;
+    opacity: 1;
+}
     </style>
 </head>
 <body>
-   <form method="get"> 
+   <form method="get" style="background-color: rgb(55, 48, 186); width: 1500px; height: 1000px;">
     <div class="container">
 <label for="name">Name</label> 
 <br>
 <input type="text" name=" name" placeholder="name"> 
 <br>       
 <label for="surname">Surname</label> <br>
-<input type="text" name="surname" placeholder="surname">
+<input id="surname" name="surname" placeholder="surname">
 <br>
 <label for="age">Age</label>
  <br>
@@ -57,24 +66,28 @@ input{
 
 <br>
 <br>
-<div class="btns">
-<button  type="submit">
-    Submit
+<div class="btns" style="font-size: 20;">
+<button  type="submit">Submit
+
 </button>
 <button type="reset">
     Reset
 </button>
 </div>
-<div>
+<br>
+<br>
+<div style="font-size: 20;">
     Choose your gender
 </div>
 <input type="radio" > <span>male</span>
 <input type="radio" > <span>female</span>
 <br>
-<div> 
+<br>
+<div style="font-size: 30;"> 
    Add Cv 
 </div>
 <input type="file"name="file">
+<br>
 <br>
 <div> 
     If you have any additional information you would like to add, please write it down.
